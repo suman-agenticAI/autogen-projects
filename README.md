@@ -25,6 +25,9 @@ Learning and building agentic AI systems using AutoGen, focusing on enterprise u
 | 7 | Supervisor-Worker | Boss agent delegates to workers (Swarm) | `07_supervisor_worker.py` |
 | 8 | Human-in-the-Loop | Agent proposes, human approves | `08_human_in_loop.py` |
 | 9 | Agent Memory | Short-term and long-term memory | `09_agent_memory.py` |
+| 10 | Structured Output | Force agents to return Pydantic models | `10_structured_output.py` |
+| 11 | Guardrails & Safety | Input/output/tool guardrails | `11_guardrails.py` |
+| 12 | Custom Agent | Build your own agent class (no LLM) | `12_custom_agent.py` |
 
 ## Agent Orchestration Patterns Covered
 
