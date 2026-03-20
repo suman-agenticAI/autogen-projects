@@ -40,6 +40,23 @@ Learning and building agentic AI systems using AutoGen, focusing on enterprise u
 6. Swarm / Handoff    - Agents transfer control to each other (Lesson 7)
 ```
 
+## Real-World Project: Council Citizen Request System
+
+A multi-agent system that processes citizen emails for a local council. Converted from LangGraph to AutoGen.
+
+**Flow:** Email -> Classifier -> Fan-Out to Specialists (parallel) -> Aggregator -> Email Response
+
+| Component | Pattern Used | LLM? |
+|-----------|-------------|------|
+| Classifier | Structured Output (Pydantic) | Yes |
+| Waste Agent | Tool Use (CRM operations) | Yes |
+| Roads Agent | Tool Use (KB search) | Yes |
+| Pets Agent | Tool Use (KB search) | Yes |
+| General Queue | Custom Agent (no LLM) | No |
+| Aggregator | LLM email composition | Yes |
+
+See [`council_agent/`](council_agent/) for the full implementation.
+
 ## Setup
 
 ```bash
